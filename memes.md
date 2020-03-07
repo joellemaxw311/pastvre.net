@@ -4,7 +4,7 @@ title: Memes
 permalink: /memes/
 ---
 
-The best of memes (by my opinion) are featured here.
+My favorite memes.
 
 | | |
 |-|:-:|-:|

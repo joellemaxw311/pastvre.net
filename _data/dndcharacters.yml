@@ -1,6 +1,7 @@
 - name: Kriv
   class: Fighter
   race: Dragonborn
+  title: 
   level: unknown
   photo: https://i.imgur.com/X4I4ebe.png
   status: retired
@@ -8,6 +9,7 @@
 - name: Druruk
   class: Barbarian
   race: Half Orc
+  title: 
   level: unknown
   photo: https://i.imgur.com/wDquljp.png
   status: retired
@@ -15,6 +17,7 @@
 - name: Garuul
   class: Fighter
   race: Goliath
+  title: 
   level: unknown
   photo: https://i.imgur.com/lnTgNsX.png
   status: retired

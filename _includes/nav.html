@@ -1,10 +1,12 @@
 <nav class="site-nav">
   <div class="trigger">
-    <ul>
+    <ul class="w3-ul w3-card-4">
     {% for page in site.pages %}
       {% if page.title %}
-      <li>
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <li class="w3-bar">
+          <div class="w3-bar-item">
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </div>
       </li>
       {% endif %}
     {% endfor %}

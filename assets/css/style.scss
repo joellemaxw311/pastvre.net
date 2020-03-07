@@ -24,7 +24,6 @@
 
 .embed {
     width: 100%;
-    height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -32,11 +31,8 @@
 .embed div {
     width: 200%;
     height: 200vw;
-}
-
-.embed div iframe {
     transform: scale(0.5);
-    transform-origin: left;
+    transform-origin: left top;
 }
 
 .iframe-container {

@@ -8,7 +8,7 @@ This page features content related to video games that I play.
 
 ## Friend Codes
 
-Add me as a friend in one of these games or services! All the services I list here are probably Nintendo products, because friend codes are pretty obselete.
+Add me as a friend in one of these games or services! It is likely that all the services I will list here are Nintendo products, because friend codes are pretty obselete.
 
 {% for service in site.data.friendcodes %}
 <h3>{{ service.name }}</h3>

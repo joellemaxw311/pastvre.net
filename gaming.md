@@ -5,10 +5,17 @@ permalink: /gaming/
 ---
 
 # Friend Codes
-## Nintendo Switch
-`{{ site.nintendoSwitchFC }}`
-## Pokemon Home
-{% include image.html url="{{ site.pokemonHomeQR }}" description="{{ site.pokemonHomeFC }}" %}
+{% for service in site.data.friendcodes %}
+<h2>{{ service.name }}</h2>
+{% if service.image %}
+<figure class="image">
+    <img src="{{ service.image }}" alt="QR code">
+    <figcaption>{{ service.code }}</figcaption>
+</figure>
+{% else %}
+<code>{{ service.code }}</code>
+{% endif %}
+{% endfor %}
 
 # Posts
 <ul class="post-list">

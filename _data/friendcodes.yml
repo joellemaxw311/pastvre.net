@@ -1,0 +1,7 @@
+
+- name: Nintendo Switch
+  code: SW-6152-2011-6941
+
+- name: Pokemon Home
+  code: GUWPLSHDAJUE
+  image: /assets/images/pokemon-home-qr-code.png

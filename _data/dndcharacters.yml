@@ -1,12 +1,52 @@
 --- 
 - 
+  class: Barbarian/Fighter
+  level: 5
+  name: "SA-10"
+  photo: "https://i.imgur.com/F71wC31.png"
+  race: Warforged
+  status: active
+  title: "\"Nice\" Robot"
+- 
+  class: Rogue/Barbarian/Fighter
+  level: 12
+  name: Gronk
+  photo: "https://i.imgur.com/nzzTsk9.png"
+  race: Brute
+  status: active
+  title: "Technically Not Dead"
+- 
+  class: Bard
+  level: 3
+  name: "W.O.R.D."
+  photo: "https://i.imgur.com/ceaVTTl.png"
+  race: Warforged
+  status: dead
+  title: Rap-bot
+- 
+  class: Barbarian
+  level: 7
+  name: Kolsch
+  photo: "https://i.imgur.com/kTL91jX.png"
+  race: Golric
+  status: dead
+  title: "Drunk \"Wizard\""
+- 
+  class: Barbarian
+  level: 12
+  name: Gaul
+  photo: "https://i.imgur.com/1hJt9Zc.jpg"
+  race: Goliath
+  status: retired
+  title: "Giant Slayer"
+- 
   class: Barbarian
   level: "???"
-  name: Druruk
-  photo: "https://i.imgur.com/wDquljp.png"
-  race: "Half-Orc"
+  name: "Chef Dan"
+  photo: "https://i.imgur.com/xjya0n1.png"
+  race: Goliath
   status: retired
-  title: ~
+  title: "Master Chef"
 - 
   class: Fighter
   level: "???"
@@ -18,48 +58,8 @@
 - 
   class: Barbarian
   level: "???"
-  name: "Chef Dan"
-  photo: "https://i.imgur.com/xjya0n1.png"
-  race: Goliath
+  name: Druruk
+  photo: "https://i.imgur.com/wDquljp.png"
+  race: "Half-Orc"
   status: retired
-  title: "Master Chef"
-- 
-  class: Barbarian
-  level: 12
-  name: Gaul
-  photo: "https://i.imgur.com/1hJt9Zc.jpg"
-  race: Goliath
-  status: retired
-  title: "Giant Slayer"
-- 
-  class: Barbarian
-  level: 7
-  name: Kolsch
-  photo: "https://i.imgur.com/kTL91jX.png"
-  race: Golric
-  status: dead
-  title: "Drunk \"Wizard\""
-- 
-  class: Bard
-  level: 3
-  name: "W.O.R.D."
-  photo: "https://i.imgur.com/ceaVTTl.png"
-  race: Warforged
-  status: dead
-  title: Rap-bot
-- 
-  class: Rogue/Barbarian/Fighter
-  level: 12
-  name: Gronk
-  photo: "https://i.imgur.com/nzzTsk9.png"
-  race: Brute
-  status: active
-  title: "Technically Not Dead"
-- 
-  class: Barbarian/Fighter
-  level: 5
-  name: "SA-10"
-  photo: "https://i.imgur.com/F71wC31.png"
-  race: Warforged
-  status: active
-  title: "\"Nice\" Robot"
+  title: ~

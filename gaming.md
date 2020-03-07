@@ -14,7 +14,7 @@ Add me as a friend in one of these games or services! All the services I list he
 <h3>{{ service.name }}</h3>
 {% if service.image %}
 <figure class="image">
-    <img src="{{ service.image }}" alt="QR code" class="thumbnail">
+    <img src="{{ service.image }}" alt="QR code" class="thumbnail qr">
     <figcaption><code>{{ service.code }}</code></figcaption>
 </figure>
 {% else %}

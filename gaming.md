@@ -4,7 +4,12 @@ title: Gaming
 permalink: /gaming/
 ---
 
+This is where I will 
+
 ## Friend Codes
+
+Add me as a friend in one of these games or services! All the services I list here are probably Nintendo products, because friend codes are pretty obselete.
+
 {% for service in site.data.friendcodes %}
 <h3>{{ service.name }}</h3>
 {% if service.image %}
@@ -19,17 +24,21 @@ permalink: /gaming/
 
 ---
 
-## Posts
-<ul class="post-list">
+## Posts about Gaming
+
+<ul class="post-list w3-ul w3-card-4">
 {% for post in site.posts %}
 {% if post.categories contains "gaming" %}
-    <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
+    <li class="w3-bar">
+        <div class="w3-bar-item">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <div class="w3-bar-item">
+            <h3>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+        </div>
     </li>
 {% endif %}
 {% endfor %}
 </ul>
-

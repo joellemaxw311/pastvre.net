@@ -2,7 +2,7 @@
 title: Pastvre
 email: joel.maxwell@pastvre.net
 description: > # this means to ignore newlines until "baseurl:"
-  The personal website of Joel "MooCovv" Maxwell.
+  The homepage of Joel "MooCovv" Maxwell.
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://www.pastvre.net" # the base hostname & protocol for your site
 github_username:  joelmaxw311

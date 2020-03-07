@@ -1,21 +1,21 @@
 - name: Kriv
   class: Fighter
   race: Dragonborn
-  level: \?\?\?
+  level: unknown
   photo: https://i.imgur.com/X4I4ebe.png
   status: retired
 
 - name: Druruk
   class: Barbarian
-  race: Half-Orc
-  level: \?\?\?
+  race: Half Orc
+  level: unknown
   photo: https://i.imgur.com/wDquljp.png
   status: retired
 
 - name: Garuul
   class: Fighter
   race: Goliath
-  level: \?\?\?
+  level: unknown
   photo: https://i.imgur.com/lnTgNsX.png
   status: retired
 
@@ -23,7 +23,7 @@
   class: Barbarian
   race: Goliath
   title: Master Chef
-  level: \?\?\?
+  level: unknown
   photo: https://i.imgur.com/xjya0n1.png
   status: retired
 
@@ -59,7 +59,7 @@
   photo: https://i.imgur.com/nzzTsk9.png
   status: active
 
-- name: SA-10
+- name: SA10
   class: Barbarian/Fighter
   race: Warforged
   title: "Nice" Robot

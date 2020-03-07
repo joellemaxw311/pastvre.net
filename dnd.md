@@ -17,9 +17,9 @@ The following are characters that I have created and played as:
     {% for character in site.data.dndcharacters %}
     <tr>
         <td>
-            {{ character.name }}<br>
+            <b>{{ character.name }}</b><br>
             {{ character.race }} <br>
-            {{ character.level }}
+            Level {{ character.level }}
         </td>
         <td>
             {{ character.class | split: "/" | join: "<br>" }}

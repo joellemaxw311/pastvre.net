@@ -34,11 +34,7 @@ $on-laptop:        800px;
     }
 }
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
-
 @import "jekyll-theme-minimal";
 
 .pop-on-hover:hover {

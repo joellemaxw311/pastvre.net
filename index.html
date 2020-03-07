@@ -6,14 +6,17 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
+  <ul class="post-list w3-ul w3-card-4">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+      <li class="w3-bar">
+        <div class="w3-bar-item">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <div class="w3-bar-item">
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </div>
       </li>
     {% endfor %}
   </ul>

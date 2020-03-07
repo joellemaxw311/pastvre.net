@@ -29,7 +29,7 @@ Add me as a friend in one of these games or services! All the services I list he
 <ul class="post-list w3-ul w3-card-4">
 {% for post in site.posts %}
 {% if post.categories contains "gaming" %}
-    {% include post-item.html date="{{ post.date }}" title="{{ post.title }}" thumbnail="{{ post.thumbnail }}" %}
+    {% include post-item.html post={{ post }}  %}
 {% endif %}
 {% endfor %}
 </ul>

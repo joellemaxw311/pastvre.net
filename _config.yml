@@ -14,3 +14,8 @@ theme: jekyll-theme-minimal
 markdown: kramdown
 permalink: /:year/:title:output_ext
 
+plugins:
+  - jekyll-github-metadata
+
+repository: joelmaxw311
+

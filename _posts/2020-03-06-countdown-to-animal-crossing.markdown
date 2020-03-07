@@ -8,4 +8,4 @@ tags: [game, Nintendo, Animal Crossing]
 thumbnail: https://cdn.wccftech.com/wp-content/uploads/2020/02/animal-crossing-new-horizons-1.jpg
 ---
 
-{% include embed.html url="https://animalcrossingworld.com/animal-crossing-new-horizons-release-date-countdown/" %}
+<iframe src="https://animalcrossingworld.com/animal-crossing-new-horizons-release-date-countdown/"></iframe>

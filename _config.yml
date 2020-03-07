@@ -8,6 +8,7 @@ url: "http://www.pastvre.net" # the base hostname & protocol for your site
 github_username:  joelmaxw311
 
 logo: /assets/images/pastvre.png
+theme: jekyll-theme-minimal
 
 # Build settings
 markdown: kramdown

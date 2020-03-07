@@ -33,6 +33,8 @@ Add me as a friend in one of these games or services! All the services I list he
     <li class="w3-bar">
         <div class="w3-bar-item">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <div class="w3-bar-item">
             <h3 class="post-link">
                 {{ post.title }}
             </h3>

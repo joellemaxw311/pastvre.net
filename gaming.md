@@ -17,6 +17,8 @@ permalink: /gaming/
 {% endif %}
 {% endfor %}
 
+---
+
 ## Posts
 <ul class="post-list">
 {% for post in site.posts %}

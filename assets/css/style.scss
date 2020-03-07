@@ -24,13 +24,15 @@
 
 .embed {
     width: 100%;
+    height: 100%;
+    max-height: 50vh;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 .embed div {
     width: 200%;
-    height: 200vw;
+    height: 200%;
     transform: scale(0.5);
     transform-origin: left top;
 }

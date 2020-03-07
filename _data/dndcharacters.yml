@@ -1,0 +1,68 @@
+- name: Kriv
+  class: Fighter
+  race: Dragonborn
+  level: \?\?\?
+  photo: https://i.imgur.com/X4I4ebe.png
+  status: retired
+
+- name: Druruk
+  class: Barbarian
+  race: Half-Orc
+  level: \?\?\?
+  photo: https://i.imgur.com/wDquljp.png
+  status: retired
+
+- name: Garuul
+  class: Fighter
+  race: Goliath
+  level: \?\?\?
+  photo: https://i.imgur.com/lnTgNsX.png
+  status: retired
+
+- name: Chef Dan
+  class: Barbarian
+  race: Goliath
+  title: Master Chef
+  level: \?\?\?
+  photo: https://i.imgur.com/xjya0n1.png
+  status: retired
+
+- name: Gaul
+  class: Barbarian
+  race: Goliath
+  title: Giant Slayer
+  level: 12
+  photo: https://i.imgur.com/1hJt9Zc.jpg
+  status: retired
+
+- name: Kolsch
+  class: Barbarian
+  race: Golric
+  title: Drunk "Wizard"
+  level: 7
+  photo: https://i.imgur.com/kTL91jX.png
+  status: dead
+
+- name: W.O.R.D.
+  class: Bard
+  race: Warforged
+  title: Rap-bot
+  level: 3
+  photo: https://i.imgur.com/ceaVTTl.png
+  status: dead
+
+- name: Gronk
+  class: Rogue/Barbarian/Fighter
+  race: Brute
+  title: Technically Not Dead
+  level: 12
+  photo: https://i.imgur.com/nzzTsk9.png
+  status: active
+
+- name: SA-10
+  class: Barbarian/Fighter
+  race: Warforged
+  title: "Nice" Robot
+  level: 5
+  photo: https://i.imgur.com/F71wC31.png
+  status: active

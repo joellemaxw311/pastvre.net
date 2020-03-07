@@ -58,11 +58,3 @@
   level: 12
   photo: https://i.imgur.com/nzzTsk9.png
   status: active
-
-- name: SA10
-  class: Barbarian/Fighter
-  race: Warforged
-  title: "Nice" Robot
-  level: 5
-  photo: https://i.imgur.com/F71wC31.png
-  status: active

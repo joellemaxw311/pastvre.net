@@ -24,6 +24,16 @@
 
 .embed {
     width: 100%;
+    overflow-x: hidden;
+}
+
+.embed div {
+    width: 200%;
+}
+
+.embed div iframe {
+    transform: scale(0.5);
+    transform-origin: left;
 }
 
 .iframe-container {

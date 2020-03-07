@@ -32,12 +32,15 @@ Add me as a friend in one of these games or services! All the services I list he
     <li class="w3-bar">
         <div class="w3-bar-item">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </div>
-        <div class="w3-bar-item">
             <h3>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h3>
         </div>
+        {% if post.thumbnail %}
+        <div class="w3-bar-item">
+            <img src="{{ post.thumbnail }}" class="post-thumbnail">
+        </div>
+        {% endif %}
     </li>
 {% endif %}
 {% endfor %}

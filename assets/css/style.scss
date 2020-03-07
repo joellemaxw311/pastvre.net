@@ -7,3 +7,12 @@
     transform: scale(1.01);
     transform-origin: center;
 }
+
+.post-thumbnail {
+    border-width: 0;
+    height: auto;
+    max-height: 100px;
+    max-width: 150px;
+    vertical-align: middle;
+    width: auto;
+}

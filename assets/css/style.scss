@@ -27,9 +27,16 @@
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 500px) {
+    .embed iframe {
+        transform: scale(0.4); 
+        transform-origin: left;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .embed iframe {
-        transform: scale(0.5); 
+        transform: scale(0.667); 
         transform-origin: left;
     }
 }

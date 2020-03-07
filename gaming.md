@@ -6,9 +6,9 @@ permalink: /gaming/
 
 # Friend Codes
 ## Nintendo Switch
-`SW-6152-2011-6941`
+`{{ site.nintendoSwitchFC }}`
 ## Pokemon Home
-{% include image.html url="/assets/images/pokemon-home-qr-code.png" description="GUWPLSHDAJUE" %}
+{% include image.html url="{{ site.pokemonHomeQR }}" description="{{ site.pokemonHomeFC }}" %}
 
 # Posts
 <ul class="post-list">

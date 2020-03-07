@@ -13,3 +13,8 @@ theme: jekyll-theme-merlot
 # Build settings
 markdown: kramdown
 permalink: /:year/:title:output_ext
+
+nintendoSwitchFC: SW-6152-2011-6941
+pokemonHomeFC: GUWPLSHDAJUE
+pokemonHomeQR: /assets/images/pokemon-home-qr-code.png
+

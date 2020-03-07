@@ -9,8 +9,7 @@ permalink: /dnd/
 The following are characters that I have created and played as:
 
 | Character | Bio | Portrait |
-|-|:-:|-:|
+|-|-|-|
 {% for character in site.data.dndcharacters %}
-| {{ character.name }} | {{ character.class }}<br>{{ character.race }}<br>{{ character.level }} | ![]({{ character.photo }}) |
-{% endif %}
+| {{ character.name }} | {{ character.class }} | ![]({{ character.photo }}) |
 {% endfor %}

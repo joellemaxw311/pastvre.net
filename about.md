@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# Welcome to Pastvre!
+## Welcome to Pastvre!
 
 My name is Joel, also known as MooCovv (like MooCow, but with 'vv' instead of 'w') on the internet. I call my domain "Pastvre" (Pasture, but with 'v' instead of 'u') to match my bovine theme. 
 

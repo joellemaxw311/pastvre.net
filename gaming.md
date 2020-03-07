@@ -4,7 +4,7 @@ title: Gaming
 permalink: /gaming/
 ---
 
-This is where I will 
+This page features content related to video games that I play.
 
 ## Friend Codes
 

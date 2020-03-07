@@ -8,8 +8,17 @@ permalink: /dnd/
 
 The following are characters that I have created and played as:
 
-| Character | Bio | Portrait |
-|-|-|-|
+<table>
+<tr>
+<th>Character</th>
+<th>Bio</th>
+<th>Portrait</th>
+</tr>
 {% for character in site.data.dndcharacters %}
-| {{ character.name }} | {{ character.class }} | ![]({{ character.photo }}) |
+<tr>
+<td>{{ character.name }}</td>
+<td>{{ character.class }}</td>
+<td><img src="{{ character.photo }}"></td>
+</tr>
 {% endfor %}
+</table>

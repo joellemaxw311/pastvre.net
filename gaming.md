@@ -30,7 +30,7 @@ Add me as a friend in one of these games or services! All the services I list he
 {% for post in site.posts %}
 {% if post.categories contains "gaming" %}
     <a href="{{ post.url | prepend: site.baseurl }}">
-    <li class="w3-bar pop-on-hover">
+    <li class="w3-bar">
         <div class="w3-bar-item">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h3 class="post-link">

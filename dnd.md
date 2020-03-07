@@ -11,18 +11,29 @@ The following are characters that I have created and played as:
 <table>
     <tr>
         <th>Character</th>
-        <th>Class</th>
+        <th>Details</th>
         <th>Portrait</th>
     </tr>
     {% for character in site.data.dndcharacters %}
+    {% assign classes = character.class | split: "/" %}
     <tr>
         <td>
-            <b>{{ character.name }}</b><br>
-            {{ character.race }} <br>
-            Level {{ character.level }}
+            <h3>{{ character.name }}</h3>
+            {% if character.title %}
+            <i>{{ character.title }}</i>
+            {% endif %}
         </td>
         <td>
-            {{ character.class | split: "/" | join: "<br>" }}
+            <dl>
+                <dt>Level</dt>
+                <dd>{{ character.level }}</dd>
+                <dt>Race</dt>
+                <dd>{{ character.race }}</dd>
+                <dt>Class</dt>
+                {% for class in classes %}
+                <dd>{{ class }}</dd>
+                {% endfor %}
+            </dl>
         </td>
         <td><img src="{{ character.photo }}"></td>
     </tr>

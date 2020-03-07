@@ -21,3 +21,15 @@
     float: none;
     padding: 0;
 }
+
+.embed {
+    width: 100%; 
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 750px) {
+    .embed iframe {
+        transform: scale(0.5); 
+        transform-origin: left;
+    }
+}

@@ -4,9 +4,9 @@ title: Gaming
 permalink: /gaming/
 ---
 
-# Friend Codes
+## Friend Codes
 {% for service in site.data.friendcodes %}
-<h2>{{ service.name }}</h2>
+<h3>{{ service.name }}</h3>
 {% if service.image %}
 <figure class="image">
     <img src="{{ service.image }}" alt="QR code">
@@ -17,15 +17,15 @@ permalink: /gaming/
 {% endif %}
 {% endfor %}
 
-# Posts
+## Posts
 <ul class="post-list">
 {% for post in site.posts %}
 {% if post.categories contains "gaming" %}
     <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
+        <h3>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
     </li>
 {% endif %}
 {% endfor %}

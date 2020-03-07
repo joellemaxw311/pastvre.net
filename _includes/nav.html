@@ -1,6 +1,11 @@
 <nav class="site-nav">
   <div class="trigger">
     <ul class="w3-ul w3-card-4">
+      <li class="w3-bar">
+        <div class="w3-bar-item">
+          <a class="page-link" href="{{ site.baseurl }}">Home</a>
+        </div>
+      </li>
     {% for page in site.pages %}
       {% if page.title %}
       <li class="w3-bar">

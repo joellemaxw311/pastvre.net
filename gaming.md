@@ -25,7 +25,7 @@ Add me as a friend in one of these games or services! It is likely that all the 
     <figcaption><code>{{ service.code }}</code></figcaption>
 </figure>
 {% else %}
-<code>{{ service.code }}</code>
+<code class="center-horizontal">{{ service.code }}</code>
 {% endif %}
 {% endfor %}
 

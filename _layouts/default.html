@@ -24,7 +24,7 @@
       <header>
         <a href="{{ "/" | absolute_url }}">
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" class="pop-on-hover" />
+          <img src="{{site.logo | relative_url}}" alt="Logo" class="pop-on-hover logo" />
         {% else %}
           <h1 class="pop-on-hover">{{ site.title | default: site.github.repository_name }}</h1>
         {% endif %}
@@ -55,17 +55,17 @@
       {{ content }}
 
       </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+      </footer>
       <aside>
         This is a
         <div style="position: relative; width: 10px; height: 1000px; background: green;">
           test
         </div>
       </aside>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-      </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}

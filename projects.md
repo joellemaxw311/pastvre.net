@@ -17,3 +17,11 @@ The following an automatically generated list of my public GitHub repositories:
 </li>
 {% endfor %}
 </ul>
+
+<ul>
+{% for repository in site.github.public_repositories %}
+<li>
+    {{ repository | jsonify }}
+</li>
+{% endfor %}
+</ul>

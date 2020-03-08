@@ -45,13 +45,10 @@ figure {
     padding: 5px;
     max-width: $figure-size;
     margin: 0;
-    margin-left: 0;
-    margin-right: 0;
     background-color: white;
     border-radius: 5px;
     
     img {
-        max-width: $figure-size;
         max-height: $figure-size;
         margin: auto;
         padding: 0;
@@ -147,4 +144,14 @@ figure.image {
 
 aside {
     float: right;
+}
+
+.center-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-vertical {
+    margin-top: auto;
+    margin-bottom: auto;
 }

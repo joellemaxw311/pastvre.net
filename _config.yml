@@ -16,6 +16,7 @@ permalink: /:year/:title:output_ext
 
 plugins:
   - jekyll-github-metadata
+  - jekyll-avatar
 
 repository: joelmaxw311
 

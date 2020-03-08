@@ -6,6 +6,13 @@ permalink: /gaming/
 
 This page features content related to video games that I play.
 
+## Profiles
+
+### Steam
+<a href="http://steamcommunity.com/id/ThePasture">
+    <img src="https://steamsignature.com/profile/default/76561198054959613.png" alt="">
+</a>
+
 ## Friend Codes
 
 Add me as a friend in one of these games or services! It is likely that all the services I will list here are Nintendo products, because friend codes are pretty obselete.

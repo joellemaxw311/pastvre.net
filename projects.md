@@ -28,13 +28,12 @@ The following an automatically generated list of my public GitHub repositories:
 {% for project in site.data.projects %}
 <li class="w3-bar project">
     <div class="w3-bar-item">
-        <h3 class="post-link">
-        {% if project.url %}<a href="{{ project.url }}">{% endif %}
-            {{ project.title }}
-        {% if project.url %}</a>{% endif %}
-        </h3>
+        <h3 class="post-link">{{ project.title }}</h3>
         {% if project.description %}
         <p>{{ project.description }}</p>
+        {% endif %}
+        {% if project.url %}
+            <a href="{{ project.url }}" class="post-meta date">{{ project.url }}</a>
         {% endif %}
     </div>
 </li>

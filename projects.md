@@ -7,7 +7,7 @@ permalink: /projects/
 ## GitHub
 The following an automatically generated list of my public GitHub repositories:
 <ul class="post-list w3-ul w3-card-4">
-{% for repository in site.github.public_repositories %}
+{% for repository in site.github.public_repositories | sort: "updated_at" %}
 <li class="w3-bar project">
     <div class="w3-bar-item">
         <h3 class="post-link">

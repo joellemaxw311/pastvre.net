@@ -108,10 +108,12 @@ figure {
         max-width: $figure-size;
         max-height: $figure-size;
         margin: auto;
+        padding: 0;
     }
 
     figcaption {
         padding: 3px;
+        margin: 0;
         text-align: center;
     }
 

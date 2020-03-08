@@ -21,3 +21,22 @@ The following an automatically generated list of my public GitHub repositories:
 </li>
 {% endfor %}
 </ul>
+
+## Other Projects
+<ul class="post-list w3-ul w3-card-4">
+{% for project in site.data.projects %}
+<li class="w3-bar project">
+    <div class="w3-bar-item">
+        <h3 class="post-link">
+        <% if project.url %><a href="{{ project.url }}"><% endif %>
+            {{ project.name }}
+        <% if project.url %></a><% endif %>
+        </h3>
+        <% if project.description %>
+        <p>{{ project.description }}</p>
+        <% endif %>
+    </div>
+</li>
+{% endfor %}
+</ul>
+

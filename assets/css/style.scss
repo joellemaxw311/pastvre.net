@@ -58,10 +58,6 @@ $on-laptop:        800px;
     width: auto;
 }
 
-qr {
-    padding: 3px;
-}
-
 .post-list li .w3-bar-item {
     float: none;
     padding: 0;
@@ -98,7 +94,7 @@ qr {
     width: 100%;
 }
 
-figure.image {
+figure {
     box-shadow: 0px 0px 5px grey;
     display: flex;
     flex-flow: column;
@@ -107,18 +103,29 @@ figure.image {
     margin: 0;
     background-color: white;
     border-radius: 5px;
+    
+    img {
+        max-width: $figure-size;
+        max-height: $figure-size;
+        margin: auto;
+    }
+
+    figcaption {
+        padding: 3px;
+        text-align: center;
+    }
+
+    figcaption > * {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
 }
 
-figure.image img {
-    max-width: $figure-size;
-    max-height: $figure-size;
-    margin: auto;
-}
-
-figure.image figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
+figure.image {
+    figcaption {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+    }
 }

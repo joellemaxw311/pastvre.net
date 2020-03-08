@@ -20,8 +20,8 @@ Add me as a friend in one of these games or services! It is likely that all the 
 {% for service in site.data.friendcodes %}
 <h3>{{ service.name }}</h3>
 {% if service.image %}
-<figure class="image">
-    <img src="{{ service.image }}" alt="QR code" class="thumbnail qr">
+<figure class="qr">
+    <img src="{{ service.image }}" alt="QR code" >
     <figcaption><code>{{ service.code }}</code></figcaption>
 </figure>
 {% else %}

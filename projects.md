@@ -29,7 +29,7 @@ The following an automatically generated list of my public GitHub repositories:
     <div class="w3-bar-item">
         <h3 class="post-link">
         {% if project.url %}<a href="{{ project.url }}">{% endif %}
-            {{ project.name }}
+            {{ project.title }}
         {% if project.url %}</a>{% endif %}
         </h3>
         {% if project.description %}

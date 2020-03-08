@@ -17,7 +17,7 @@ The following an automatically generated list of my public GitHub repositories:
         <p>{{ repository.description }}</p>
     </div>
     <div class="w3-bar-item">
-        <span class="post-meta date"><span class="start-date">{{ repository.created_at | date: "%b %-d, %Y" }}</span> - <span class="end-date">{{ repository.updated_at | date: "%b %-d, %Y" }}</span></span>
+        <span class="post-meta date"><span class="start-date">{{ repository.created_at | date: "%b %Y" }}</span> - <span class="end-date">{{ repository.updated_at | date: "%b %Y" }}</span></span>
     </div>
 </li>
 {% endfor %}

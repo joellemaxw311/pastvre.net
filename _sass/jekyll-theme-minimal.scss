@@ -1,7 +1,6 @@
 @import "fonts";
 @import "rouge-github";
 
-
 body {
 
   padding:50px;
@@ -93,7 +92,12 @@ th, td {
 }
 
 dt {
+
   font-weight:700;
+}
+
+img {
+  max-width:100%;
 }
 
 header {

@@ -13,15 +13,11 @@ The following an automatically generated list of my public GitHub repositories:
         <h3 class="post-link">
             <a href="{{ repository.html_url }}">{{ repository.name }}</a>
         </h3>
+        <p>{{ repository.description }}</p>
     </div>
-</li>
-{% endfor %}
-</ul>
-
-<ul>
-{% for repository in site.github.public_repositories %}
-<li>
-    {{ repository | jsonify }}
+    <div class="w3-bar-item">
+        <span class="post-meta"><span class="start-date">{{ repository.created_at | date: "%b %-d, %Y" }}</span> - <span class="end-date">{{ repository.updated_at | date: "%b %-d, %Y" }}</span></span>
+    </div>
 </li>
 {% endfor %}
 </ul>

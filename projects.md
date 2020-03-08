@@ -8,7 +8,7 @@ permalink: /projects/
 The following an automatically generated list of my public GitHub repositories:
 <ul class="post-list w3-ul w3-card-4">
 {% for repository in site.github.public_repositories %}
-<li class="w3-bar">
+<li class="w3-bar project">
     <div class="w3-bar-item">
         <h3 class="post-link">
             <a href="{{ repository.html_url }}">{{ repository.name }}</a>
@@ -16,7 +16,7 @@ The following an automatically generated list of my public GitHub repositories:
         <p>{{ repository.description }}</p>
     </div>
     <div class="w3-bar-item">
-        <span class="post-meta"><span class="start-date">{{ repository.created_at | date: "%b %-d, %Y" }}</span> - <span class="end-date">{{ repository.updated_at | date: "%b %-d, %Y" }}</span></span>
+        <span class="post-meta date"><span class="start-date">{{ repository.created_at | date: "%b %-d, %Y" }}</span> - <span class="end-date">{{ repository.updated_at | date: "%b %-d, %Y" }}</span></span>
     </div>
 </li>
 {% endfor %}

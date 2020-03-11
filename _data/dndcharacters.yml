@@ -1,5 +1,13 @@
 --- 
 - 
+  class: Rogue/Barbarian/Fighter
+  level: 12
+  name: Gronk
+  photo: ~
+  race: Lightfoot Halfling
+  status: active
+  title: "Reincarnated"
+- 
   class: Barbarian/Fighter
   level: 5
   name: "SA-10"
@@ -11,9 +19,9 @@
   class: Rogue/Barbarian/Fighter
   level: 12
   name: Gronk
-  photo: "https://i.imgur.com/nzzTsk9.png"
+  photo: "https://i.imgur.com/jofabkJ.png"
   race: Brute
-  status: active
+  status: reincarnated
   title: "Technically Not Dead"
 - 
   class: Bard

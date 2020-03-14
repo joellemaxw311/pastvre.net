@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 ## GitHub
-The following an automatically generated list of my public GitHub repositories:
+The following an automatically* generated list of my public GitHub repositories:
 <ul class="post-list w3-ul w3-card-4">
 {% assign sorted = (site.github.public_repositories | sort: 'updated_at') | reverse %}
 {% for repository in sorted %}
@@ -41,4 +41,4 @@ The following an automatically generated list of my public GitHub repositories:
 </ul>
 
 <hr>
-<p><small>Lasted updated {{ site.time | date: '%-d %B %Y' }}</small></p>
+<p><small>* Last updated {{ site.time | date: '%-d %B %Y' }}</small></p>

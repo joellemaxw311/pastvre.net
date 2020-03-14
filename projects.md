@@ -40,3 +40,5 @@ The following an automatically generated list of my public GitHub repositories:
 {% endfor %}
 </ul>
 
+<hr>
+<p><small>Lasted updated {{ site.time | date: '%-d %B %Y' }}</small></p>

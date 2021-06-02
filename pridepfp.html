@@ -1,0 +1,195 @@
+<html>
+    <head>
+<style>
+    *[theme="#light"] {
+        background: #ffffff;
+        color: #000000;
+    }
+    *[theme="#dark"] {
+        background: #202225;
+        color: #b9bbbe;
+    }
+    *[theme="#black"] {
+        background: #000000;
+        color: #FFFFFF;
+    }
+    .hidden {
+        display: none;
+    }
+    #savePrompt {
+        width: 100%;
+    }
+    #canvasDiv {
+        padding: 10pt;
+    }
+    #outputDiv {
+        padding: 2pt;
+        text-align: center;
+    }
+    .inputFieldDiv {
+        margin: 5pt;
+    }
+    img.thumbnail {
+        height: 1em;
+        width: auto;
+    }
+
+</style>
+    </head>
+    <body theme="dark">
+        <div id="inputDiv">
+            <div class="inputFieldDiv">
+                <label>Profile Image File:</label>
+                <img class="thumbnail" id="customImg" />
+                <input type="file" id="imageLoader" name="imageLoader"/>
+            </div>
+            <div class="inputFieldDiv">
+                <label>Flag Image File:</label>
+                <img class="thumbnail" id="prideImg" />
+                <input type="file" id="flagLoader" name="flagLoader"/>
+            </div>
+            <div class="inputFieldDiv">
+                <label>Border size:</label>
+                <input type="number" min="0" max="0" step="1" value="0" id="insetSpinner" name="insetSpinner"> px
+            </div>
+            <div class="inputFieldDiv">
+                <label for="themeSelector">Preview theme:</label>
+                <select name="themeSelector" id="themeSelector">
+                    <option value="#dark">Dark</option>
+                    <option value="#light">Light</option>
+                    <option value="#black">Black</option>
+                </select>
+            </div>
+        </div>
+        <div id="outputDiv">
+            <div id="canvasDiv">
+                <canvas id="imageCanvas"></canvas>
+                <canvas id="previewCanvas"></canvas>
+            </div>
+            <span id="savePrompt" class="hidden">Right click -&gt; Save image as...</span>
+        </div>
+
+        <script>
+
+var imageLoader = document.getElementById('imageLoader');
+    imageLoader.addEventListener('change', handleImage, false);
+var flagLoader = document.getElementById('flagLoader');
+    flagLoader.addEventListener('change', handleFlag, false);
+var insetSpinner = document.getElementById('insetSpinner');
+    insetSpinner.addEventListener('change', changeInset, false);
+var themeSelector = document.getElementById('themeSelector');
+    themeSelector.addEventListener('change', changeTheme, false);
+var savePrompt = document.getElementById("savePrompt");
+var canvas1 = document.getElementById('imageCanvas');
+var canvas2 = document.getElementById('previewCanvas');
+// var ctx = new CanvasRenderingContext2D();
+
+let outputDiv = document.getElementById('outputDiv');
+
+var customImg = null;
+var prideImg = null;
+var inset = 0;
+
+themeSelector.value = window.location.hash;
+changeTheme();
+
+function changeTheme() {
+    let theme = themeSelector.value;
+    outputDiv.setAttribute("theme", theme);
+    history.replaceState(undefined, undefined, theme);
+    //window.location.hash = theme;
+}
+
+function changeInset(event) {
+    inset = insetSpinner.value;
+    if (customImg != null && prideImg != null) {
+        renderAll();
+    }
+}
+
+function renderPreview(canvas) {
+    canvas.width = customImg.width;
+    canvas.height = customImg.height;
+    var ctx = canvas.getContext('2d');
+    let radius = Math.min(customImg.width, customImg.height) / 2;
+
+    // Create circular clipping region
+    ctx.beginPath();
+    ctx.arc(radius, radius, radius, 0, Math.PI * 2);
+    ctx.clip();
+    
+    ctx.drawImage(prideImg,0,0,customImg.width,customImg.height);
+
+    // Create circular clipping region
+    ctx.beginPath();
+    ctx.arc(radius, radius, radius - inset, 0, Math.PI * 2);
+    ctx.clip();
+
+    ctx.drawImage(customImg,0,0);
+}
+
+function renderPfp(canvas) {
+    canvas.width = customImg.width;
+    canvas.height = customImg.height;
+    let ctx = canvas.getContext('2d');
+    let radius = Math.min(customImg.width, customImg.height) / 2;
+
+    ctx.drawImage(prideImg,0,0,customImg.width,customImg.height);
+
+    // Create circular clipping region
+    ctx.beginPath();
+    ctx.arc(radius, radius, radius - inset, 0, Math.PI * 2);
+    ctx.clip();
+
+    ctx.drawImage(customImg,inset, inset, customImg.width - (inset * 2), customImg.height - (inset * 2));
+}
+
+function renderAll() {
+    savePrompt.classList.remove("hidden");
+    renderPfp(canvas1);
+    renderPreview(canvas2);
+}
+
+function onPrideImageLoad() {
+    if (customImg != null) {
+        renderAll();
+    }
+}
+
+function onCustomImageLoad() {
+    insetSpinner.max = Math.floor(customImg.width / 4);
+
+    if (prideImg != null) {
+        renderAll();
+    }
+
+    // prideImg = new Image();
+    // prideImg.onload = onPrideImageLoad;
+    // prideImg.src = 'https://vectorflags.s3.amazonaws.com/flags/org-trans-square-01.png';
+}
+
+function handleFlag(e){
+    var reader = new FileReader();
+    reader.onload = function(event){
+        prideImg = new Image();
+        prideImg.onload = onPrideImageLoad;
+        prideImg.src = event.target.result;
+        document.getElementById("prideImg").src = prideImg.src;
+    }
+    reader.readAsDataURL(e.target.files[0]);     
+}
+
+function handleImage(e){
+    var reader = new FileReader();
+    reader.onload = function(event){
+        customImg = new Image();
+        customImg.onload = onCustomImageLoad;
+        customImg.src = event.target.result;
+        document.getElementById("customImg").src = customImg.src;
+    }
+    reader.readAsDataURL(e.target.files[0]);     
+}
+
+        </script>
+    </body>
+</html>
